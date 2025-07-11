@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/adapter_bg"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="1"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:textSize="@dimen/_14ssp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:includeFontPadding="false"
+            android:background="@drawable/number_bg"
+            />
+
+        <TextView
+            android:id="@+id/englishName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:includeFontPadding="false"
+            android:text="Alif Lam Meem"
+            android:textColor="#042229"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            app:layout_constraintBottom_toTopOf="@+id/arabicTxt"
+            app:layout_constraintStart_toEndOf="@id/num"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/arabicTxt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:fontFamily="@font/arabicfont"
+            android:includeFontPadding="false"
+            android:gravity="top"
+            android:text="آل عمران"
+            android:textStyle="bold"
+            android:textColor="#042229"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/num"
+            app:layout_constraintTop_toBottomOf="@+id/englishName" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

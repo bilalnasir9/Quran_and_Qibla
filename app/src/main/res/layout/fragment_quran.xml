@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/topBar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:layout_height="@dimen/_50sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:src="@drawable/back_icon"
+            android:layout_height="@dimen/_30sdp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:text="@string/al_quran"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18ssp"
+            android:layout_height="wrap_content" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnlastread"
+            android:layout_width="@dimen/_25sdp"
+            android:src="@drawable/historyicon"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tabLy"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/parahTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/parah"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:paddingVertical="@dimen/_10sdp"
+            android:background="@drawable/gradientbtnshaperounded"
+            android:textSize="@dimen/_12ssp"
+            />
+        <TextView
+            android:id="@+id/surahTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/surah"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:includeFontPadding="false"
+            android:paddingVertical="@dimen/_10sdp"
+            android:background="@drawable/un_selected_rounded_btn"
+            android:textSize="@dimen/_12ssp"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/quranListRv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/_12sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLy"
+        tools:listitem="@layout/view_adapter_ly" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

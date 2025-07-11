@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <!-- 1 · Splash (start/host) -->
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.github.bilalnasir9.quran.ui.fragments.SplashFragment"
+        android:label="Splash">
+        <!-- go to Quran -->
+        <action
+            android:id="@+id/action_splash_to_quran"
+            app:destination="@id/listquranFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <!-- go to Qibla -->
+        <action
+            android:id="@+id/action_splash_to_qibla"
+            app:destination="@id/qiblaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/listquranFragment"
+        android:name="com.github.bilalnasir9.quran.ui.fragments.ListQuranFragment"
+        android:label="Quran">
+        <action android:id="@+id/action_listquran_to_readquran"
+            app:destination="@id/readQuranFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/qiblaFragment"
+        android:name="com.github.bilalnasir9.quran.ui.fragments.QiblaFragment"
+        android:label="Qibla" />
+    <fragment
+        android:id="@+id/readQuranFragment"
+        android:name="com.github.bilalnasir9.quran.ui.fragments.ReadQuranFragment"
+        android:label="ReadQuran">
+        <argument
+            android:name="pagNo"
+            app:argType="string" />
+
+    </fragment>
+</navigation>

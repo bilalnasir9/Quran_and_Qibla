@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Quran</string>
+
+    <string name="download_quran">Download Quran</string>
+    <string name="downloadqurantext">Download is required to use this feature.\nPlease click Download to start downloading.</string>
+    <string name="download_complete">Download Complete</string>
+    <string name="downloading">Downloading..</string>
+    <string name="al_quran">Al-Quran</string>
+    <string name="surah">Sūrah</string>
+    <string name="parah">Juzʼ</string>
+    <string name="favorite">Favorite</string>
+    <string name="suraharabic">Favorite</string>
+    <string name="paraarabic">Favorite</string>
+    <string name="showcase_message">The app automatically remembers your last read page. Just tap the History button to quickly pick up where you left off.</string>
+</resources>
