@@ -1,6 +1,5 @@
 package com.github.bilalnasir9.quran.utils
 
-import com.github.bilalnasir9.quran.base.showlogD
 import com.github.bilalnasir9.quran.models.QuranModel
 
 
@@ -168,26 +167,26 @@ object QuranDataUtils {
     }
 
 
-    fun findParaName(pageNo:Int):QuranModel?{
-        val list= allParas()
-        list.forEach {
-            val pageNum = it.pageNumber.replace("[()]".toRegex(), "").toInt()
-            showlogD(message = "findParaName: $pageNum")
-            if (pageNum == pageNo){
-                return it
-            }
-        }
-        return null
-    }
-    fun findSurahName(pageNo:Int):QuranModel? {
-        val list = allSurah()
-        list.forEach {
-            val pageNum = it.pageNumber.replace("[()]".toRegex(), "").toInt()
-            if (pageNum == pageNo) {
-                return it
-            }
-        }
-        return null
-    }
+//    fun findParaName(pageNo:Int):QuranModel?{
+//        val list= allParas()
+//        list.forEach {
+//            val pageNum = it.pageNumber.replace("[()]".toRegex(), "").toInt()
+//            showlogD(message = "findParaName: $pageNum")
+//            if (pageNum == pageNo){
+//                return it
+//            }
+//        }
+//        return null
+//    }
+//    fun findSurahName(pageNo:Int):QuranModel? {
+//        val list = allSurah()
+//        list.forEach {
+//            val pageNum = it.pageNumber.replace("[()]".toRegex(), "").toInt()
+//            if (pageNum == pageNo) {
+//                return it
+//            }
+//        }
+//        return null
+//    }
 
 }

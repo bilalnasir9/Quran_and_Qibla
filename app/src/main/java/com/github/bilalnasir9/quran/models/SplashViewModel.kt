@@ -12,18 +12,13 @@ import com.github.bilalnasir9.quran.utils.FileUtils.getDownloadableUrl
 import com.github.bilalnasir9.quran.utils.SharedPreferencesHelper
 
 class SplashViewModel : BaseViewModel() {
-//    fun startSplashTimer(callback: () -> Unit) {
-//        launchOnMain {
-//            delay(5000) // Simulate splash screen delay
-//            callback.invoke()
-//        }
-//    }
-
     private val _progress = MutableLiveData<Int>()
     val progress: LiveData<Int> = _progress
 
     private val _completed = MutableLiveData<Boolean>()
     val completed: LiveData<Boolean> = _completed
+
+
 
     fun startDownload(ctx: Context) {
         launchOnIO {

@@ -65,5 +65,6 @@ dependencies {
 
     implementation("com.github.DImuthuUpe:AndroidPdfViewer:3.1.0-beta.1")
     implementation("com.getkeepsafe.taptargetview:taptargetview:1.15.0")
+    implementation("com.google.android.gms:play-services-location:21.2.0")
 
 }

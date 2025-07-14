@@ -8,9 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
-import androidx.fragment.app.viewModels
 import androidx.viewbinding.ViewBinding
-import com.github.bilalnasir9.quran.models.SplashViewModel
 
 abstract class BaseDialogFragment <VB : ViewBinding> : DialogFragment() {
     private var _binding: VB? = null

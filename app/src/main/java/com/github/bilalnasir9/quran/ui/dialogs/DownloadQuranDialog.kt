@@ -7,13 +7,11 @@ import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import androidx.navigation.fragment.findNavController
 import com.github.bilalnasir9.quran.R
 import com.github.bilalnasir9.quran.base.BaseDialogFragment
 import com.github.bilalnasir9.quran.base.visible
 import com.github.bilalnasir9.quran.databinding.QuranDownloadingLyBinding
 import com.github.bilalnasir9.quran.models.SplashViewModel
-import com.github.bilalnasir9.quran.ui.fragments.SplashFragmentDirections
 
 
 class DownloadQuranDialog(

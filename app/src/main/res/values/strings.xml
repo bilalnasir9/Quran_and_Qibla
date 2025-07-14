@@ -12,4 +12,5 @@
     <string name="suraharabic">Favorite</string>
     <string name="paraarabic">Favorite</string>
     <string name="showcase_message">The app automatically remembers your last read page. Just tap the History button to quickly pick up where you left off.</string>
+    <string name="qiblaangle">Qibla Angle</string>
 </resources>

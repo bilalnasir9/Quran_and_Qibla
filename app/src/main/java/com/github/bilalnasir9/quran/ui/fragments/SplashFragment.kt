@@ -2,30 +2,46 @@ package com.github.bilalnasir9.quran.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.viewModels
+import androidx.activity.result.ActivityResultLauncher
 import androidx.navigation.fragment.findNavController
 import com.github.bilalnasir9.quran.base.BaseFragment
-import com.github.bilalnasir9.quran.base.showlogD
+import com.github.bilalnasir9.quran.base.showToast
 import com.github.bilalnasir9.quran.databinding.FragmentSplashBinding
-import com.github.bilalnasir9.quran.models.SplashViewModel
 import com.github.bilalnasir9.quran.ui.dialogs.DownloadQuranDialog
 import com.github.bilalnasir9.quran.utils.FileUtils
+import com.github.bilalnasir9.quran.utils.PermissionManager
 
 class SplashFragment : BaseFragment<FragmentSplashBinding>() {
-    private val viewModel: SplashViewModel by viewModels()
+//    private val viewModel: SplashViewModel by viewModels()
+private lateinit var locationPermissionLauncher: ActivityResultLauncher<String>
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        showlogD(message = "onViewCreated..")
+        locationPermissionLauncher = PermissionManager.registerLocationPermissionLauncher(this) { granted ->
+            if (granted) {
+                findNavController().navigate(SplashFragmentDirections.actionSplashToQibla())
+            } else {
+                requireContext().showToast(message = "Location permission is required to use this feature")
+                findNavController().navigate(SplashFragmentDirections.actionSplashToQibla())
+            }
+        }
+    }
+    private fun checkAndRequestLocationPermission(isGranted:()->Unit) {
+        if (PermissionManager.isLocationPermissionGranted(requireContext())) {
+           isGranted.invoke()
+        } else {
+            locationPermissionLauncher.launch(PermissionManager.LOCATION_PERMISSION)
+        }
     }
     override fun setupViews() {
 
         binding.apply {
 
             btncompass.setOnClickListener {
-                findNavController().navigate(SplashFragmentDirections.actionSplashToQibla())
+                checkAndRequestLocationPermission(isGranted = {
+                    findNavController().navigate(SplashFragmentDirections.actionSplashToQibla())
+                })
             }
             btnquran.setOnClickListener {
                 btnQuranClick()
@@ -33,6 +49,8 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>() {
         }
 
     }
+
+
     private fun btnQuranClick() {
         if (FileUtils.getPDFFile(requireContext()).exists()){
             findNavController().navigate(SplashFragmentDirections.actionSplashToQuran())

@@ -2,13 +2,97 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="16dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
-
-    <androidx.appcompat.widget.AppCompatImageView
+    <LinearLayout
+        android:id="@+id/topBar"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/compass1"/>
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:layout_height="@dimen/_50sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:src="@drawable/back_icon"
+            android:layout_height="@dimen/_30sdp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:text="Qibla Direction"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18ssp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/_16sdp"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/compass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/compassnew"
+            android:layout_margin="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/compassImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/compass"
+            app:layout_constraintEnd_toEndOf="@+id/compass"
+            app:layout_constraintStart_toStartOf="@+id/compass"
+            app:layout_constraintTop_toTopOf="@+id/compass">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/directionarrow" />
+
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/needle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/qabarotater"
+            android:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/angleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_8sdp"
+        tools:text="Qibla Angle: 255"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/detailsLy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>
