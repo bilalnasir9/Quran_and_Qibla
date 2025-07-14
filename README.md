@@ -26,9 +26,10 @@ An open-source Android app that allows users to read the **Holy Quran** and find
 
 ## 📱 Screenshots
 
-| Home Screen | Quran Reader | Download Quran File | Read History | Index Screen | Read Screen | Qibla Screen |
-|-------------|--------------|----------------------|--------------|---------------|-------------|---------------|
-| ![Home](screenshots/Screenshot_1.webp) | ![Quran](screenshots/Screenshot_2.webp) | ![Download](screenshots/Screenshot_3.webp) | ![History](screenshots/Screenshot_4.webp) | ![Index](screenshots/Screenshot_5.webp) | ![Read](screenshots/Screenshot_6.webp) | ![Qibla](screenshots/Screenshot_7.webp) |
+| Home Screen | Download Quran File | Read History | Index Screen | Read Screen | Qibla Screen |
+|-------------|----------------------|--------------|---------------|-------------|---------------|
+| ![Home](screenshots/Screenshot_1.webp) | ![Download](screenshots/Screenshot_2.webp) | ![History](screenshots/Screenshot_3.webp) | ![Index](screenshots/Screenshot_4.webp) | ![Read](screenshots/Screenshot_5.webp) | ![Qibla](screenshots/Screenshot_6.webp) |
+
 
 
 ---
