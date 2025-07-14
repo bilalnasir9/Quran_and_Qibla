@@ -68,7 +68,7 @@ Contributions are warmly welcome! Whether it's a bug fix, new feature, performan
 I'm a passionate Android developer who loves building clean, user-friendly, and meaningful apps. This project was created to serve the community with an ad-free, modern Islamic utility app.
 
 - 📧 Email: [bilalnasir6860@gmail.com](mailto:bilalnasir6860@gmail.com)  
-- 🔗 LinkedIn: [linkedin.com/in/bilal-nasir-44059319a](linkedin.com/in/bilal-nasir-44059319a)
+- 🔗 LinkedIn: [lhttps://www.linkedin.com/in/bilal-nasir-44059319a](https://www.linkedin.com/in/bilal-nasir-44059319a)
   
 Feel free to connect with me for collaboration, questions, or feedback!
 
