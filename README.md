@@ -14,36 +14,19 @@ An open-source Android app that allows users to read the **Holy Quran** and find
   - Complete Quran (Arabic text).
   - Clean reading interface for spiritual focus.
   - Fast navigation across Surahs.
+    
+- 🧠 **Auto Save Reading History**
+  - Automatically remembers your **last read page**.
+  - Instantly resume reading from where you left off.
+
+- 🎯 **Modern MVVM Architecture**
+  - Built with **Single Activity Architecture**.
+  - **ViewModel**, **LiveData**, **Navigation Component** .
 
 - 🚫 **100% Ad-Free**
   - No ads. No distractions.
 
-- 🎯 **Modern MVVM Architecture**
-  - Built with **Single Activity Architecture**.
-  - **ViewModel**, **LiveData**, **Navigation Component**, and **Data Binding**.
-
 ---
-## 📱 Screenshots
-
-<table>
-  <tr>
-    <th>Home Screen</th>
-    <th>Download Quran File</th>
-    <th>Read History</th>
-    <th>Index Screen</th>
-    <th>Read Screen</th>
-    <th>Qibla Screen</th>
-  </tr>
-  <tr>
-    <td><img src="screenshots/Screenshot_1.webp" width="350"/></td>
-    <td><img src="screenshots/Screenshot_2.webp" width="350"/></td>
-    <td><img src="screenshots/Screenshot_3.webp" width="350"/></td>
-    <td><img src="screenshots/Screenshot_4.webp" width="350"/></td>
-    <td><img src="screenshots/Screenshot_5.webp" width="350"/></td>
-    <td><img src="screenshots/Screenshot_6.webp" width="350"/></td>
-  </tr>
-</table>
-
 
 ## 📱 Screenshots
 
