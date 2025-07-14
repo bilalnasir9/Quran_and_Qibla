@@ -35,12 +35,12 @@ An open-source Android app that allows users to read the **Holy Quran** and find
     <th>Qibla Screen</th>
   </tr>
   <tr>
-    <td><img src="screenshots/Screenshot_1.webp" width="300"/></td>
-    <td><img src="screenshots/Screenshot_2.webp" width="300"/></td>
-    <td><img src="screenshots/Screenshot_3.webp" width="200"/></td>
-    <td><img src="screenshots/Screenshot_4.webp" width="200"/></td>
-    <td><img src="screenshots/Screenshot_5.webp" width="200"/></td>
-    <td><img src="screenshots/Screenshot_6.webp" width="200"/></td>
+    <td><img src="screenshots/Screenshot_1.webp" width="350"/></td>
+    <td><img src="screenshots/Screenshot_2.webp" width="350"/></td>
+    <td><img src="screenshots/Screenshot_3.webp" width="350"/></td>
+    <td><img src="screenshots/Screenshot_4.webp" width="350"/></td>
+    <td><img src="screenshots/Screenshot_5.webp" width="350"/></td>
+    <td><img src="screenshots/Screenshot_6.webp" width="350"/></td>
   </tr>
 </table>
 
