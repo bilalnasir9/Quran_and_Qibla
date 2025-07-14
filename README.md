@@ -42,14 +42,14 @@ An open-source Android app that allows users to read the **Holy Quran** and find
 
 - **Language:** Kotlin
 - **Architecture:** MVVM + Single Activity
-- **UI:** Jetpack Navigation, DataBinding, ViewBinding
+- **UI:** Jetpack Navigation, ViewBinding
 - **Permissions:** Runtime Permission API with `ActivityResultLauncher`
 
 ---
 
 ## 🤝 Contribution
 
-Contributions are warmly welcome! Whether it's a bug fix, new feature, performance improvement, or UI enhancement — every bit helps.
+Contributions are warmly welcome! Whether it's a bug fix, new feature, Quran translations, performance improvement, or UI enhancement — every bit helps.
 
 ### 🛠 How to Contribute
 
@@ -68,7 +68,7 @@ Contributions are warmly welcome! Whether it's a bug fix, new feature, performan
 I'm a passionate Android developer who loves building clean, user-friendly, and meaningful apps. This project was created to serve the community with an ad-free, modern Islamic utility app.
 
 - 📧 Email: [bilalnasir6860@gmail.com](mailto:bilalnasir6860@gmail.com)  
-- 🔗 LinkedIn: [lhttps://www.linkedin.com/in/bilal-nasir-44059319a](https://www.linkedin.com/in/bilal-nasir-44059319a)
+- 🔗 LinkedIn: [https://www.linkedin.com/in/bilal-nasir-44059319a](https://www.linkedin.com/in/bilal-nasir-44059319a)
   
 Feel free to connect with me for collaboration, questions, or feedback!
 
