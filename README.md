@@ -23,6 +23,27 @@ An open-source Android app that allows users to read the **Holy Quran** and find
   - **ViewModel**, **LiveData**, **Navigation Component**, and **Data Binding**.
 
 ---
+## 📱 Screenshots
+
+<table>
+  <tr>
+    <th>Home Screen</th>
+    <th>Download Quran File</th>
+    <th>Read History</th>
+    <th>Index Screen</th>
+    <th>Read Screen</th>
+    <th>Qibla Screen</th>
+  </tr>
+  <tr>
+    <td><img src="screenshots/Screenshot_1.webp" width="200"/></td>
+    <td><img src="screenshots/Screenshot_2.webp" width="200"/></td>
+    <td><img src="screenshots/Screenshot_3.webp" width="200"/></td>
+    <td><img src="screenshots/Screenshot_4.webp" width="200"/></td>
+    <td><img src="screenshots/Screenshot_5.webp" width="200"/></td>
+    <td><img src="screenshots/Screenshot_6.webp" width="200"/></td>
+  </tr>
+</table>
+
 
 ## 📱 Screenshots
 
