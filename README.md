@@ -1,4 +1,4 @@
-# 📖 Al Quran & Qibla Finder App (Ad-Free)
+# 📖 Al-Quran & Qibla Finder App (Ad-Free)
 
 An open-source Android app that allows users to read the **Holy Quran** and find the **Qibla direction** using a digital compass — all wrapped in a **simple, clean, and ad-free experience**.
 
